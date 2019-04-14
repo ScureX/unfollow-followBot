@@ -12,23 +12,33 @@ api = tweepy.API(auth)
 
 
 
-#follow = ["realdonaldtrump", "dinoearth_bot"]
+follow = ["2dartonline", "yourpantsu", "pomfclub", "nisopict_bot_k2", "nisopict_bot_kr", "regike_", "rocksylight", "cuteanimegirls_", "acecatgirlbot"]
 
-#for e in follow:
-    #api.create_friendship(e)
-    
+cmd = input("f/uf: ")
+
+if cmd=="f":
+    for a in follow:
+        api.create_friendship(a)
+        time.sleep(1)
+elif cmd=="uf":
+    for b in follow:
+        api.destroy_friendship(b)
+        time.sleep(1)
+else:
+    print("command doesn't exist")
+
 
 hour = datetime.datetime.now().hour
 minute = datetime.datetime.now(). minute
 
-time = str(hour)l+":"+str(minute)
+time = str(hour)+":"+str(minute)
 
 #print(str(hour)+":"+str(minute))
 
 
-try:
-    print(time)
-    if time=="10:29":
-        print("10:29")
-    else:
-        time.sleep(20)
+
+#print(time)
+#if time=="11:29":
+   # print("now")
+   
+
