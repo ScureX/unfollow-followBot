@@ -12,7 +12,7 @@ api = tweepy.API(auth)
 
 #######
 #array with accounts that should be followed/unfollowed
-follow = ["2dartonline", "yourpantsu", "pomfclub", "nisopict_bot_k2", "nisopict_bot_kr", "regike_", "rocksylight", "cuteanimegirls_", "acecatgirlbot", "gifsanime_"]
+follow = []
 
 ########
 
@@ -37,9 +37,8 @@ while True:
             time.sleep(31)
         else:
             print("not the right time")
-            time.sleep(5)
-            time.sleep(20)
+            time.sleep(25)
             
     else:
         print("weekend")
-        time.sleep(100)
+        time.sleep(300)
