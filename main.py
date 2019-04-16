@@ -17,18 +17,23 @@ follow = ["2dartonline", "yourpantsu", "pomfclub", "nisopict_bot_k2", "nisopict_
 ########
 
 while True:
-    if datetime.datetime.today().weekday() <= 0 and day >= 5:
+    print(datetime.datetime.today().weekday())
+    
+    if datetime.datetime.today().weekday() == 0 or datetime.datetime.today().weekday() == 1 or datetime.datetime.today().weekday() == 2 or datetime.datetime.today().weekday() == 3 or datetime.datetime.today().weekday() == 4:
         print(str(datetime.datetime.now().hour)+":"+str(datetime.datetime.now().minute))
         
         if str(datetime.datetime.now().hour)+":"+str(datetime.datetime.now().minute)=="7:0":
             for a in follow:
                 api.destroy_friendship(a)
                 time.sleep(1)
-                time.sleep(30)
-        elif zeit=="16:0":
+            print("unfollowed")
+            time.sleep(31)
+        elif str(datetime.datetime.now().hour)+":"+str(datetime.datetime.now().minute)=="16:0":
             for a in follow:
                 api.create_friendship(a)
                 time.sleep(1)
+            print("unfollowed")
+            time.sleep(31)
         else:
             print("not the right time")
             time.sleep(5)
