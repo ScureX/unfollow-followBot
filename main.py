@@ -43,27 +43,3 @@ while True:
     else:
         print("weekend")
         time.sleep(100)
-
-
-
-
-#cmd = input("f/uf: ")
-
-#if cmd=="f":
-#    sec = len(follow)
-#    print(sec)
-#    for a in follow:
-#        api.create_friendship(a)
-#        sec = sec-1
-#        print(sec)
-#        time.sleep(1)
-#elif cmd=="uf":
-#    sec = len(follow)
-#    print(sec)
-#    for b in follow:
-#        api.destroy_friendship(b)
-#        sec = sec-1
-#        print(l)
-#        time.sleep(1)
-#else:
-#    print("command doesn't exist")
